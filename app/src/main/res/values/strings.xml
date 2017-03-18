@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ImmoCalc - Real estate calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name_mode_monthly">Enter your capital to estimate your Monthly TEG will you get:</string>
+    <string name="app_name_mode_capitaly">Enter your maximum monthly TEG to estimate the capital you can get:</string>
+    <string name="button_capitaly">By capital</string>
+    <string name="button_monthly">By Monhtly</string>
+    <string name="textview_capital">Capital</string>
+    <string name="editext_capital_hint">Desired capital</string>
+    <string name="textview_duration">Duration</string>
+    <string name="editext_duration_hint">Number of years</string>
+    <string name="textview_teg">Bank rate</string>
+    <string name="editext_teg_hint">\?</string>
+    <string name="content_checkbox_advanced">Advanced settings</string>
+    <string name="radio_button_method_1">Proportional</string>
+    <string name="radio_button_method_2">Actuarial</string>
+    <string name="textview_assu">Insurrance rate</string>
+    <string name="editext_assu_hint">\?</string>
+    <string name="button_calculate">Calculate</string>>
+    <string name="textview_result_text">Monthly</string>>
+    <string name="textview_result_calcul">____</string>
+
+    <string name="currency_symbol">\u00A0$</string>
+
+    <string name="error_input">\u00A0value is wrong, given value :\u00A0</string>
+</resources>

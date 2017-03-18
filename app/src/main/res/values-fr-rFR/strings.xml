@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ImmoCalc - Calculatrice immobilière</string>
+    <string name="action_settings">Options</string>
+    <string name="app_name_mode_monthly">Entrer votre capital pour estimater votre mensualité :</string>
+    <string name="app_name_mode_capitaly">Entrer votre mensualité maximum pour estimater le capital dont vous bénéficierz :</string>
+    <string name="button_capitaly">Par capital</string>
+    <string name="button_monthly">Par mensualité</string>
+    <string name="textview_capital">Capital</string>
+    <string name="editext_capital_hint">Capital souhaité</string>
+    <string name="textview_duration">Durée</string>
+    <string name="editext_duration_hint">Nombre d\'années</string>
+    <string name="textview_teg">Taux</string>
+    <string name="editext_teg_hint">\?</string>
+    <string name="content_checkbox_advanced">Options avancées</string>
+    <string name="radio_button_method_1">Proportionnelle</string>
+    <string name="radio_button_method_2">Actuarielle (PEL)</string>
+    <string name="textview_assu">Taux assurance</string>
+    <string name="editext_assu_hint">\?</string>
+    <string name="button_calculate">Calculer</string>>
+    <string name="textview_result_text">Mensualité</string>>
+
+    <string name="currency_symbol">\u00A0€</string>
+
+    <string name="error_input">\u00A0: valeur erronée. Valeur insérée :\u00A0</string>
+</resources>
