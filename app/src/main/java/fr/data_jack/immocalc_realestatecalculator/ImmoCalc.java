@@ -207,7 +207,7 @@ public class ImmoCalc extends AppCompatActivity {
 
     public double getMonthlyTEG(float capital, double taux, float year)
     {
-		double result = 0.0d;
+        double result = 0.0d;
         double methodRate = 0.0d;
         if (checkboxAdvancedOptions.isChecked() && radioGroupMethod.getCheckedRadioButtonId() == R.id.radio_button_method_1) {
             methodRate = this.getProportionalRate(taux);
@@ -215,9 +215,9 @@ public class ImmoCalc extends AppCompatActivity {
             methodRate = this.getActurielleRate(taux);
         }
         float months = 12 * year;
-		result = round((double) (capital * methodRate * Math.pow((1.0d + methodRate), months)) / (Math.pow((1.0d + methodRate), months) - 1.0d), 2);
+        result = round((double) (capital * methodRate * Math.pow((1.0d + methodRate), months)) / (Math.pow((1.0d + methodRate), months) - 1.0d), 2);
 
-		return result;
+        return result;
     }
 
     public double getTotalCapital(float monthly, double taux, float year)
@@ -229,10 +229,10 @@ public class ImmoCalc extends AppCompatActivity {
         } else {
             methodRate = this.getActurielleRate(taux);
         }
-		float months = 12 * year;
-		result = round((double) ( monthly * ((Math.pow((1.0d + methodRate), months) - 1.0d) / (methodRate * Math.pow((1.0d + methodRate), months))) ), 2);
-		
-		return result;
+        float months = 12 * year;
+        result = round((double) ( monthly * ((Math.pow((1.0d + methodRate), months) - 1.0d) / (methodRate * Math.pow((1.0d + methodRate), months))) ), 2);
+
+        return result;
     }
 
     /**
