@@ -204,9 +204,9 @@ public class ImmoCalc extends AppCompatActivity {
             break;
         }
     }
-	
-	public double getMonthlyTEG(float capital, double taux, float year)
-	{
+
+    public double getMonthlyTEG(float capital, double taux, float year)
+    {
 		double result = 0.0d;
         double methodRate = 0.0d;
         if (checkboxAdvancedOptions.isChecked() && radioGroupMethod.getCheckedRadioButtonId() == R.id.radio_button_method_1) {
@@ -218,10 +218,10 @@ public class ImmoCalc extends AppCompatActivity {
 		result = round((double) (capital * methodRate * Math.pow((1.0d + methodRate), months)) / (Math.pow((1.0d + methodRate), months) - 1.0d), 2);
 
 		return result;
-	}
-	
-	public double getTotalCapital(float monthly, double taux, float year)
-	{
+    }
+
+    public double getTotalCapital(float monthly, double taux, float year)
+    {
         double result = 0.0d;
         double methodRate = 0.0d;
         if (checkboxAdvancedOptions.isChecked() && radioGroupMethod.getCheckedRadioButtonId() == R.id.radio_button_method_1) {
@@ -233,7 +233,7 @@ public class ImmoCalc extends AppCompatActivity {
 		result = round((double) ( monthly * ((Math.pow((1.0d + methodRate), months) - 1.0d) / (methodRate * Math.pow((1.0d + methodRate), months))) ), 2);
 		
 		return result;
-	}
+    }
 
     /**
      * Return acturielle rate (based on PEL yearly rate)
@@ -267,17 +267,17 @@ public class ImmoCalc extends AppCompatActivity {
      * If B > 3, cast float
      * Else cast int ...
      *
-	 * @param A
-	 * @param B
-	 * @return
-	 */
+     * @param A
+     * @param B
+     * @return
+     */
 	public static double round(double A, int B)
 	{
         // TODO - check method integrity
-		if (B <= 3) {
-			return (double) ( (int) (A * Math.pow(10, B) + .5)) / Math.pow(10, B);
-		} else {
-			return (double) ( (float) (A * Math.pow(10, B) + .5)) / Math.pow(10, B);
-		}
-	}
+        if (B <= 3) {
+            return (double) ( (int) (A * Math.pow(10, B) + .5)) / Math.pow(10, B);
+        } else {
+            return (double) ( (float) (A * Math.pow(10, B) + .5)) / Math.pow(10, B);
+        }
+    }
 }
